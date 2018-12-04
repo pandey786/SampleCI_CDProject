@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        print("Test Comment 6")
+        print("Test Comment 7")
     }
     
     override func didReceiveMemoryWarning() {
