@@ -1,0 +1,16 @@
+name: Pull Request Stats
+
+on: pull_request
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run pull request stats
+        uses: flowwer-dev/pull-request-stats@v1
+        with:
+          token: ${{ secrets.f13fe2e24f297435c32b3c9a759bb32d46e01cb3 }}
+          repositories: 'username/repo1,username/repo2,username/repo3'
+          period: 7
+          charts: true
+          sort-by: 'COMMENTS'
